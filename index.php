@@ -1,25 +1,5 @@
 <?php
-
-$tabJson = '[
-  {
-  "firstName": "Иван",
-  "lastName": "Иванов",
-  "address": "г.Москва, ул. Алиева,2",
-  "phoneNumber": "812 123-1234"
-  },
-  {
-      "firstName": "Сергей",
-    "lastName": "Сергеевич",
-    "address": "г.Москва, ул. Алиева,15",
-    "phoneNumber": "812 123-1264"
-  },
-  {
-      "firstName": "Артём",
-    "lastName": "Артёмович",
-    "address": "г.Москва, ул. Алиева,20",
-    "phoneNumber": "812 123-1273"
-  }
-]';
+$tabJson = file_get_contents('file.json');
 
 $tab = json_decode($tabJson,true);
 
